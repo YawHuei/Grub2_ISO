@@ -1,0 +1,6 @@
+find --set-root --devices=h /grubiso/grub2.iso
+map --mem /grubiso/grub2.iso (0xff)
+map --hook
+rootnoverify (0xff)
+chainloader (0xff)
+boot
